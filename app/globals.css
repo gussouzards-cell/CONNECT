@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-blue: #2563eb;
+  --border-radius: 12px;
+  --spacing: 24px;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+.fluap-card {
+  @apply bg-white rounded-fluap p-fluap border border-gray-200 shadow-sm;
+}
+
+.fluap-button {
+  @apply px-6 py-3 rounded-fluap font-medium transition-all duration-200;
+}
+
+.fluap-button-primary {
+  @apply fluap-button bg-primary-600 text-white hover:bg-primary-700;
+}
+
+.fluap-button-secondary {
+  @apply fluap-button bg-gray-100 text-gray-700 hover:bg-gray-200;
+}
+
